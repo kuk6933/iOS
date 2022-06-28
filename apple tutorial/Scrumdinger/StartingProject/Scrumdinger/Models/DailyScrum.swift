@@ -10,7 +10,11 @@ struct DailyScrum: Identifiable {
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
         self.id = id
         self.title = title
+<<<<<<< .merge_file_ukTL13
         self.attendees = attendees.map { Attendee(name: $0)}
+=======
+        self.attendees = attendees.map{Attendee(name: $0)}
+>>>>>>> .merge_file_JzCBfV
         self.lengthInMinutes = lengthInMinutes
         self.theme = theme
     }

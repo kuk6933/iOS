@@ -8,7 +8,7 @@ import SwiftUI
 struct ScrumdingerApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView{
+            NavigationView {
                 ScrumsView(scrums: DailyScrum.sampleData)
             }
         }

@@ -15,10 +15,17 @@ struct DetailView: View {
     var body: some View {
         List {
             Section(header: Text("Meeting Info")){
+<<<<<<< .merge_file_HVotrE
                 NavigationLink(destination: MeetingView()) {
                     Label("Start Meeting", systemImage: "timer")
                         .font(.headline)
                         .foregroundColor(.accentColor)
+=======
+                NavigationLink(destination: MeetingView()){
+                Label("Start Meeting", systemImage: "timer")
+                    .font(.headline)
+                    .foregroundColor(.accentColor)
+>>>>>>> .merge_file_Om3pRp
                 }
                 HStack{
                     Label("Length",systemImage: "clock")
@@ -39,6 +46,7 @@ struct DetailView: View {
                 .accessibilityElement(children: .combine)
                 
             }
+<<<<<<< .merge_file_HVotrE
             Section(header: Text("Attendees")) {
                 ForEach(scrum.attendees) {
                     attendee in
@@ -69,7 +77,15 @@ struct DetailView: View {
                         }
                     }
             }
+=======
+            Section(header: Text("Attendees")){
+                ForEach(scrum.attendees) { attendee in
+                    Label(attendee.name, systemImage: "person")
+                }
+            }
+>>>>>>> .merge_file_Om3pRp
         }
+        .navigationTitle(scrum.title)
     }
 }
 
