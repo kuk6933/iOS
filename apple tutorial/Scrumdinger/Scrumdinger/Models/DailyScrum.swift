@@ -4,7 +4,6 @@
 //
 //  Created by ohhyeongseok on 2022/07/14.
 //
-
 import Foundation
 
 struct DailyScrum: Identifiable {
@@ -17,7 +16,7 @@ struct DailyScrum: Identifiable {
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
         self.id = id
         self.title = title
-        self.attendees = attendees.map{ Attendee(name: $0)}
+        self.attendees = attendees.map { Attendee(name: $0) }
         self.lengthInMinutes = lengthInMinutes
         self.theme = theme
     }
@@ -40,11 +39,18 @@ extension DailyScrum {
         var lengthInMinutes: Double = 5
         var theme: Theme = .seafoam
     }
+    
     var data: Data {
         Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), theme: theme)
     }
+    
+    mutating func update(from data: Data) {
+        title = data.title
+        attendees = data.attendees
+        lengthInMinutes = Int(data.lengthInMinutes)
+        theme = data.theme
+    }
 }
-
 
 extension DailyScrum {
     static let sampleData: [DailyScrum] =
@@ -53,5 +59,4 @@ extension DailyScrum {
         DailyScrum(title: "App Dev", attendees: ["Katie", "Gray", "Euna", "Luis", "Darla"], lengthInMinutes: 5, theme: .orange),
         DailyScrum(title: "Web Dev", attendees: ["Chella", "Chris", "Christina", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah"], lengthInMinutes: 5, theme: .poppy)
     ]
-    
 }
