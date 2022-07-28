@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct LapView: View {
-    @EnvironmentObject  var stopWatchManager: StopWatchManager
+    @ObservedObject  var stopWatchManager: StopWatchManager
     var body: some View {
+        ScrollView {
+            VStack{
+                ForEach(stopWatchManager.lapArray, id: \.self ,content: {
+                    Text("\(String(format: "%.2f" ,$0))")
+                        .padding()
+                })
+            }
+        }
     }
 }
 
 struct LapView_Previews: PreviewProvider {
     static var previews: some View {
-        LapView()
+        LapView(stopWatchManager: StopWatchManager())
     }
 }
