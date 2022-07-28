@@ -14,7 +14,7 @@
 		A69F1783288E4D8600AF88CC /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F1782288E4D8600AF88CC /* WatchView.swift */; };
 		A69F1785288E5D0E00AF88CC /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F1784288E5D0E00AF88CC /* ButtonView.swift */; };
 		A69F1787288E5F3500AF88CC /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F1786288E5F3500AF88CC /* StopWatchManager.swift */; };
-		A69F17DD28922ACB00AF88CC /* LapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F17DC28922ACB00AF88CC /* LapView.swift */; };
+		A69F17DF2892696D00AF88CC /* LapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F17DE2892696D00AF88CC /* LapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		A69F1782288E4D8600AF88CC /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
 		A69F1784288E5D0E00AF88CC /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		A69F1786288E5F3500AF88CC /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
-		A69F17DC28922ACB00AF88CC /* LapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapView.swift; sourceTree = "<group>"; };
+		A69F17DE2892696D00AF88CC /* LapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +59,13 @@
 		A69F1773288E39F400AF88CC /* stopwatch */ = {
 			isa = PBXGroup;
 			children = (
+				A69F177A288E39F400AF88CC /* Preview Content */,
 				A69F1774288E39F400AF88CC /* stopwatchApp.swift */,
 				A69F1776288E39F400AF88CC /* ContentView.swift */,
-				A69F1778288E39F400AF88CC /* Assets.xcassets */,
-				A69F177A288E39F400AF88CC /* Preview Content */,
 				A69F1782288E4D8600AF88CC /* WatchView.swift */,
 				A69F1784288E5D0E00AF88CC /* ButtonView.swift */,
 				A69F1786288E5F3500AF88CC /* StopWatchManager.swift */,
-				A69F17DC28922ACB00AF88CC /* LapView.swift */,
+				A69F17DE2892696D00AF88CC /* LapView.swift */,
 			);
 			path = stopwatch;
 			sourceTree = "<group>";
@@ -74,6 +73,7 @@
 		A69F177A288E39F400AF88CC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				A69F1778288E39F400AF88CC /* Assets.xcassets */,
 				A69F177B288E39F400AF88CC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -149,7 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A69F17DD28922ACB00AF88CC /* LapView.swift in Sources */,
+				A69F17DF2892696D00AF88CC /* LapView.swift in Sources */,
 				A69F1777288E39F400AF88CC /* ContentView.swift in Sources */,
 				A69F1787288E5F3500AF88CC /* StopWatchManager.swift in Sources */,
 				A69F1785288E5D0E00AF88CC /* ButtonView.swift in Sources */,

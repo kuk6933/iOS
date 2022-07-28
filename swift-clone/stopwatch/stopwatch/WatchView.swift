@@ -8,23 +8,34 @@
 import SwiftUI
 
 struct WatchView: View {
-    @EnvironmentObject  var stopWatchManager: StopWatchManager
+    @ObservedObject  var stopWatchManager: StopWatchManager
+    var timeUnit: Int
+    var doubleTimeUnit: Double
+    var timeUnitStr: String {
+        let timeUnitStr = String(timeUnit)
+        return timeUnit < 10 ? "0" + timeUnitStr : timeUnitStr
+    }
+    var doubleTimeUnitStr: String {
+        let doubleTimeUnitStr = String(format: "%.2f", doubleTimeUnit)
+        return doubleTimeUnit < 10 ? "0" + doubleTimeUnitStr : doubleTimeUnitStr
+    }
+
+    var combinedUnitStr: String {
+        let combinedUintStr = timeUnitStr + ":" + doubleTimeUnitStr
+        stopWatchManager.toBelapped = combinedUintStr
+        print(stopWatchManager.toBelapped)
+        return combinedUintStr
+    }
     var body: some View {
-        ScrollView{
-            VStack{
-                Text("Stop Watch")
-                Section{
-                    Text(String(format: "%.2f", stopWatchManager.secondsElapsed))
-                        .font(.title)
-                        .padding()
-                }
-            }
+        HStack{
+            Text(timeUnitStr + ":" + doubleTimeUnitStr)
+            
         }
     }
 }
 
 struct WatchView_Previews: PreviewProvider {
     static var previews: some View {
-        WatchView()
+        WatchView(stopWatchManager: StopWatchManager(), timeUnit: 1, doubleTimeUnit: 0.1)
     }
 }

@@ -7,21 +7,52 @@
 
 import SwiftUI
 
-struct TimerButton: View {
-    let label: String
-    let buttonColor: Color
+struct ButtonView: View {
+    @ObservedObject  var stopWatchManager: StopWatchManager
     var body: some View {
-        Text(label)
-            .foregroundColor(.white)
-            .padding(.vertical, 20)
-            .padding(.horizontal, 90)
-            .background(buttonColor)
-            .cornerRadius(10)
-    }
-}
+        HStack{
+            if !stopWatchManager.isWorking {
+                
+                Button {
+                    stopWatchManager.reset()
+                } label: {
+                    Text("Reset")
+                }
+                .padding()
+                .foregroundColor(.black)
+                Button {
+                    stopWatchManager.start()
+                } label: {
+                    Text("Start")
+                }
+                .padding()
+                .foregroundColor(.green)
+            }
+                else {
+                 
+                    Button {
+                        stopWatchManager.storeLap(record: stopWatchManager.toBelapped)
+                    } label: {
+                        Text("Lap")
+                    }
+                    .padding()
+                    .foregroundColor(.black)
+                    Button {
+                        stopWatchManager.stop()
+                    } label: {
+                        Text("Stop")
+                    }
+                    .padding()
+                    .foregroundColor(.red)
+                    
 
-struct TimerButton_Previews: PreviewProvider {
+                }
+            }
+        }
+    }
+
+struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerButton(label: "start", buttonColor: .blue)
+        ButtonView(stopWatchManager: StopWatchManager())
     }
 }
