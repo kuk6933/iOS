@@ -28,7 +28,7 @@ struct WatchView: View {
     }
     var body: some View {
         HStack{
-            Text(timeUnitStr + ":" + doubleTimeUnitStr)
+            Text(combinedUnitStr)
             
         }
     }

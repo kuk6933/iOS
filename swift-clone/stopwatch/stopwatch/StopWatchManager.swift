@@ -10,7 +10,7 @@ class StopWatchManager: ObservableObject {
     
     @Published var isWorking = false 
     @Published var secondsElapsed = 0.00
-    @Published var toBelapped = ""
+    var toBelapped = ""
     var minutesElapsed = 0
     @Published var lapArray : [String] = []
     var timer = Timer()

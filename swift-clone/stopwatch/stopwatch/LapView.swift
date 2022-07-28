@@ -13,8 +13,10 @@ struct LapView: View {
         ScrollView {
             VStack{
                 ForEach(stopWatchManager.lapArray, id: \.self ,content: {
-                    Text("\(String(format: "%.2f" ,$0))")
+                    Text($0)
+                        .font(.title)
                         .padding()
+                        
                 })
             }
         }
