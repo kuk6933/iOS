@@ -10,15 +10,15 @@ import SwiftUI
 struct LapView: View {
     @ObservedObject  var stopWatchManager: StopWatchManager
     var body: some View {
-        ScrollView {
+  
             VStack{
-                ForEach(stopWatchManager.lapArray, id: \.self ,content: {
+                ForEach(stopWatchManager.lapArray.reversed(), id: \.self ,content: {
                     Text($0)
-                        .font(.title)
+                        .font(.caption)
                         .padding()
                         
                 })
-            }
+            
         }
     }
 }

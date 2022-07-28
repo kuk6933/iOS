@@ -11,19 +11,24 @@ struct ContentView: View {
     @StateObject var stopWatchManager = StopWatchManager()
     var body: some View {
         ScrollView{
-            Text("Stop Watch")
             VStack
             {
+                Text("Stop Watch")
+                
                 HStack{
                     WatchView(stopWatchManager: stopWatchManager, timeUnit: stopWatchManager.minutesElapsed, doubleTimeUnit: stopWatchManager.secondsElapsed)
                         .padding()
                 }
-                ButtonView(stopWatchManager: stopWatchManager)
-                    .padding()
+                Section{
+                    ButtonView(stopWatchManager: stopWatchManager)
+                        .padding()
+                }
+                .padding()
                 LapView(stopWatchManager: stopWatchManager)
             }
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

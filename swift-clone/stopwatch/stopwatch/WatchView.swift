@@ -23,7 +23,6 @@ struct WatchView: View {
     var combinedUnitStr: String {
         let combinedUintStr = timeUnitStr + ":" + doubleTimeUnitStr
         stopWatchManager.toBelapped = combinedUintStr
-        print(stopWatchManager.toBelapped)
         return combinedUintStr
     }
     var body: some View {
