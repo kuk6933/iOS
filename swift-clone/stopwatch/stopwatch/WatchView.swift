@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct WatchView: View {
+    @EnvironmentObject  var stopWatchManager: StopWatchManager
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            VStack{
+                Text("Stop Watch")
+                Section{
+                    Text(String(format: "%.2f", stopWatchManager.secondsElapsed))
+                        .font(.title)
+                        .padding()
+                }
+            }
+        }
     }
 }
 
