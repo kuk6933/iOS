@@ -19,12 +19,12 @@ struct WatchView: View {
         let doubleTimeUnitStr = String(format: "%.2f", doubleTimeUnit)
         return doubleTimeUnit < 10 ? "0" + doubleTimeUnitStr : doubleTimeUnitStr
     }
-
     var combinedUnitStr: String {
         let combinedUintStr = timeUnitStr + ":" + doubleTimeUnitStr
         stopWatchManager.toBelapped = combinedUintStr
         return combinedUintStr
     }
+    
     var body: some View {
         HStack{
             Text(combinedUnitStr)

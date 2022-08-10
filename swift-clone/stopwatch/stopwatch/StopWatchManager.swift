@@ -6,9 +6,9 @@
 //
 
 import SwiftUI
+
 class StopWatchManager: ObservableObject {
-    
-    @Published var isWorking = false 
+    @Published var isWorking = false
     @Published var secondsElapsed = 0.00
     var toBelapped = ""
     var minutesElapsed = 0
@@ -16,6 +16,8 @@ class StopWatchManager: ObservableObject {
     var timer = Timer()
     
     func start() {
+        
+        
         timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { timer in
             self.secondsElapsed += 0.01
             if(self.secondsElapsed >= 60.0)
@@ -26,21 +28,19 @@ class StopWatchManager: ObservableObject {
         }
         isWorking = true
     }
-    func stop()
-    {
+    
+    func stop() {
         timer.invalidate()
         isWorking = false
     }
     
-    func reset()
-    {
+    func reset() {
         secondsElapsed = 0.00
-        minutesElapsed = 0 
+        minutesElapsed = 0
         lapArray.removeAll()
     }
     
-    func storeLap(record: String)
-    {
+    func storeLap(record: String) {
         lapArray.append(record)
     }
 }

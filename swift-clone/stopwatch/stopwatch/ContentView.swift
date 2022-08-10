@@ -10,16 +10,14 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var stopWatchManager = StopWatchManager()
     var body: some View {
-        ScrollView{
-            VStack
-            {
+        ScrollView {
+            VStack {
                 Text("Stop Watch")
-                
-                HStack{
+                HStack {
                     WatchView(stopWatchManager: stopWatchManager, timeUnit: stopWatchManager.minutesElapsed, doubleTimeUnit: stopWatchManager.secondsElapsed)
                         .padding()
                 }
-                Section{
+                Section {
                     ButtonView(stopWatchManager: stopWatchManager)
                         .padding()
                 }
@@ -28,7 +26,6 @@ struct ContentView: View {
             }
         }
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {

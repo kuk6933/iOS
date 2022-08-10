@@ -28,28 +28,28 @@ struct ButtonView: View {
                 .padding()
                 .foregroundColor(.green)
             }
-                else {
-                 
-                    Button {
-                        stopWatchManager.storeLap(record: stopWatchManager.toBelapped)
-                    } label: {
-                        Text("Lap")
-                    }
-                    .padding()
-                    .foregroundColor(.black)
-                    Button {
-                        stopWatchManager.stop()
-                    } label: {
-                        Text("Stop")
-                    }
-                    .padding()
-                    .foregroundColor(.red)
-                    
-
+            else {
+                
+                Button {
+                    stopWatchManager.storeLap(record: stopWatchManager.toBelapped)
+                } label: {
+                    Text("Lap")
                 }
+                .padding()
+                .foregroundColor(.black)
+                Button {
+                    stopWatchManager.stop()
+                } label: {
+                    Text("Stop")
+                }
+                .padding()
+                .foregroundColor(.red)
+                
+                
             }
         }
     }
+}
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
