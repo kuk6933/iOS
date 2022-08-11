@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct stopwatchApp: App {
+    private var stopWatchManager = StopWatchManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(stopWatchManager)
         }
     }
 }

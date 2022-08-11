@@ -15,6 +15,7 @@
 		A69F1785288E5D0E00AF88CC /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F1784288E5D0E00AF88CC /* ButtonView.swift */; };
 		A69F1787288E5F3500AF88CC /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F1786288E5F3500AF88CC /* StopWatchManager.swift */; };
 		A69F17DF2892696D00AF88CC /* LapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F17DE2892696D00AF88CC /* LapView.swift */; };
+		A6F2824D28A39E91007A8168 /* StopWatchComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2824C28A39E91007A8168 /* StopWatchComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		A69F1784288E5D0E00AF88CC /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		A69F1786288E5F3500AF88CC /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
 		A69F17DE2892696D00AF88CC /* LapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapView.swift; sourceTree = "<group>"; };
+		A6F2824C28A39E91007A8168 /* StopWatchComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +61,11 @@
 		A69F1773288E39F400AF88CC /* stopwatch */ = {
 			isa = PBXGroup;
 			children = (
-				A69F177A288E39F400AF88CC /* Preview Content */,
 				A69F1774288E39F400AF88CC /* stopwatchApp.swift */,
-				A69F1776288E39F400AF88CC /* ContentView.swift */,
-				A69F1782288E4D8600AF88CC /* WatchView.swift */,
-				A69F1784288E5D0E00AF88CC /* ButtonView.swift */,
-				A69F1786288E5F3500AF88CC /* StopWatchManager.swift */,
-				A69F17DE2892696D00AF88CC /* LapView.swift */,
+				A6F2824728A39CF7007A8168 /* Model */,
+				A6F2824828A39D03007A8168 /* View */,
+				A6F2824928A39D0E007A8168 /* ViewModel */,
+				A69F177A288E39F400AF88CC /* Preview Content */,
 			);
 			path = stopwatch;
 			sourceTree = "<group>";
@@ -77,6 +77,33 @@
 				A69F177B288E39F400AF88CC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6F2824728A39CF7007A8168 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6F2824C28A39E91007A8168 /* StopWatchComponent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6F2824828A39D03007A8168 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A69F17DE2892696D00AF88CC /* LapView.swift */,
+				A69F1784288E5D0E00AF88CC /* ButtonView.swift */,
+				A69F1782288E4D8600AF88CC /* WatchView.swift */,
+				A69F1776288E39F400AF88CC /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6F2824928A39D0E007A8168 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A69F1786288E5F3500AF88CC /* StopWatchManager.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +182,7 @@
 				A69F1785288E5D0E00AF88CC /* ButtonView.swift in Sources */,
 				A69F1775288E39F400AF88CC /* stopwatchApp.swift in Sources */,
 				A69F1783288E4D8600AF88CC /* WatchView.swift in Sources */,
+				A6F2824D28A39E91007A8168 /* StopWatchComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

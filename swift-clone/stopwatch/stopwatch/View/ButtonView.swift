@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ButtonView: View {
-    @ObservedObject  var stopWatchManager: StopWatchManager
+    @EnvironmentObject  var stopWatchManager: StopWatchManager
+    
     var body: some View {
         HStack{
             if !stopWatchManager.isWorking {
-                
                 Button {
                     stopWatchManager.reset()
                 } label: {
@@ -29,9 +29,8 @@ struct ButtonView: View {
                 .foregroundColor(.green)
             }
             else {
-                
                 Button {
-                    stopWatchManager.storeLap(record: stopWatchManager.toBelapped)
+                    stopWatchManager.storeLap(record: stopWatchManager.combinedUnitStr)
                 } label: {
                     Text("Lap")
                 }
@@ -44,8 +43,6 @@ struct ButtonView: View {
                 }
                 .padding()
                 .foregroundColor(.red)
-                
-                
             }
         }
     }
@@ -53,6 +50,6 @@ struct ButtonView: View {
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(stopWatchManager: StopWatchManager())
+        ButtonView()
     }
 }

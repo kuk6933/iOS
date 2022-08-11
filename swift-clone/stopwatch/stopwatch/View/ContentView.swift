@@ -8,21 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var stopWatchManager = StopWatchManager()
+    @EnvironmentObject var stopWatchManager: StopWatchManager
     var body: some View {
         ScrollView {
-            VStack {
+            VStack
+            {
                 Text("Stop Watch")
-                HStack {
-                    WatchView(stopWatchManager: stopWatchManager, timeUnit: stopWatchManager.minutesElapsed, doubleTimeUnit: stopWatchManager.secondsElapsed)
+                HStack{
+                    WatchView(combinedUnitStr: stopWatchManager.combinedUnitStr)
                         .padding()
                 }
-                Section {
-                    ButtonView(stopWatchManager: stopWatchManager)
+                Section{
+                    ButtonView()
                         .padding()
                 }
                 .padding()
-                LapView(stopWatchManager: stopWatchManager)
+                LapView()
             }
         }
     }

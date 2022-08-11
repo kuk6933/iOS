@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct LapView: View {
-    @ObservedObject  var stopWatchManager: StopWatchManager
+    @EnvironmentObject var stopWatchManager: StopWatchManager
+    
     var body: some View {
-        
         VStack {
             ForEach(stopWatchManager.lapArray.reversed(), id: \.self ,content: {
                 Text($0)
@@ -23,6 +23,6 @@ struct LapView: View {
 
 struct LapView_Previews: PreviewProvider {
     static var previews: some View {
-        LapView(stopWatchManager: StopWatchManager())
+        LapView()
     }
 }
