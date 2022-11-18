@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="200" id="GPm-fY-5Mb" customClass="ListCell" customModule="BountyList" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="200" id="GPm-fY-5Mb" customClass="ListCell" customModule="BountyList" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="386" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GPm-fY-5Mb" id="NUk-KE-MnS">
@@ -74,6 +74,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="lZw-DP-9Ot" kind="presentation" identifier="showDetail" id="OhJ-td-aXr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,18 +87,39 @@
             <objects>
                 <viewController id="lZw-DP-9Ot" customClass="DetailViewController" customModule="BountyList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gi9-dP-whB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abR-Q8-tzi">
+                                <rect key="frame" x="184" y="128" width="47" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="WCt-Ub-i51"/>
+                                    <constraint firstAttribute="height" constant="50" id="ozB-NW-oDX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="close_ic" buttonSize="small">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="1" scale="small"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="close:" destination="lZw-DP-9Ot" eventType="touchUpInside" id="eBF-xt-knb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="S6f-M1-rYa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S6f-M1-rYa" firstAttribute="trailing" secondItem="abR-Q8-tzi" secondAttribute="trailing" constant="50" id="51Y-Iy-5kG"/>
+                            <constraint firstItem="abR-Q8-tzi" firstAttribute="top" secondItem="S6f-M1-rYa" secondAttribute="top" constant="50" id="E5Q-oK-V0d"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4r2-W6-oFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1025" y="16"/>
+            <point key="canvasLocation" x="1024.6376811594205" y="15.401785714285714"/>
         </scene>
     </scenes>
     <resources>
+        <image name="close_ic" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
