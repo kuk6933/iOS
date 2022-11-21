@@ -90,8 +90,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DOZ-Dc-pou">
+                                <rect key="frame" x="50" y="148" width="314" height="448.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DOZ-Dc-pou" secondAttribute="height" multiplier="7:10" id="f4v-U6-AId"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOu-Lw-dLj">
+                                <rect key="frame" x="135" y="731" width="187" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luffy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI7-Wp-wd3">
+                                <rect key="frame" x="168.5" y="652" width="77" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abR-Q8-tzi">
-                                <rect key="frame" x="184" y="128" width="47" height="41"/>
+                                <rect key="frame" x="317" y="48" width="47" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="WCt-Ub-i51"/>
                                     <constraint firstAttribute="height" constant="50" id="ozB-NW-oDX"/>
@@ -110,8 +128,20 @@
                         <constraints>
                             <constraint firstItem="S6f-M1-rYa" firstAttribute="trailing" secondItem="abR-Q8-tzi" secondAttribute="trailing" constant="50" id="51Y-Iy-5kG"/>
                             <constraint firstItem="abR-Q8-tzi" firstAttribute="top" secondItem="S6f-M1-rYa" secondAttribute="top" constant="50" id="E5Q-oK-V0d"/>
+                            <constraint firstItem="wI7-Wp-wd3" firstAttribute="centerX" secondItem="DOZ-Dc-pou" secondAttribute="centerX" id="Epj-O3-39P"/>
+                            <constraint firstItem="DOZ-Dc-pou" firstAttribute="top" secondItem="S6f-M1-rYa" secondAttribute="top" constant="100" id="JJe-8b-vHg"/>
+                            <constraint firstItem="hOu-Lw-dLj" firstAttribute="centerX" secondItem="wI7-Wp-wd3" secondAttribute="centerX" constant="0.5" id="N9G-Kx-Hr8"/>
+                            <constraint firstItem="DOZ-Dc-pou" firstAttribute="leading" secondItem="S6f-M1-rYa" secondAttribute="leading" constant="50" id="Qrp-d0-CYZ"/>
+                            <constraint firstItem="DOZ-Dc-pou" firstAttribute="centerX" secondItem="S6f-M1-rYa" secondAttribute="centerX" id="XiQ-p5-6Oo"/>
+                            <constraint firstItem="wI7-Wp-wd3" firstAttribute="top" secondItem="DOZ-Dc-pou" secondAttribute="bottom" constant="55.5" id="kgj-0n-dER"/>
+                            <constraint firstItem="hOu-Lw-dLj" firstAttribute="top" secondItem="wI7-Wp-wd3" secondAttribute="bottom" constant="43" id="rcm-FS-ejV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bountyLabel" destination="hOu-Lw-dLj" id="rkO-3B-RpR"/>
+                        <outlet property="imgView" destination="DOZ-Dc-pou" id="U5V-V4-CAf"/>
+                        <outlet property="nameLabel" destination="wI7-Wp-wd3" id="Lij-pU-utp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4r2-W6-oFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
