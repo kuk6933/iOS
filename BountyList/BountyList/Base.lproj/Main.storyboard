@@ -150,9 +150,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="BountyLabelCenterX" destination="N9G-Kx-Hr8" id="d2v-fO-E6W"/>
                         <outlet property="bountyLabel" destination="hOu-Lw-dLj" id="rkO-3B-RpR"/>
                         <outlet property="imgView" destination="DOZ-Dc-pou" id="U5V-V4-CAf"/>
                         <outlet property="nameLabel" destination="wI7-Wp-wd3" id="Lij-pU-utp"/>
+                        <outlet property="nameLabelCenterX" destination="Epj-O3-39P" id="5DA-3X-lAp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4r2-W6-oFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
