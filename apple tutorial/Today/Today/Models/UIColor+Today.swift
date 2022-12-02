@@ -1,10 +1,3 @@
-//
-//  UIColor+Today.swift
-//  Today
-//
-//  Created by ohhyeongseok on 2022/12/02.
-//
-
 /*
 See LICENSE folder for this sample’s licensing information.
 */
@@ -64,5 +57,4 @@ extension UIColor {
         UIColor(named: "TodayProgressUpperBackground") ?? .systemGray6
     }
 }
-
 

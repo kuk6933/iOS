@@ -1,9 +1,6 @@
-//
-//  Date+Today.swift
-//  Today
-//
-//  Created by ohhyeongseok on 2022/12/02.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+*/
 
 import Foundation
 
@@ -19,7 +16,6 @@ extension Date {
             return String(format: dateAndTimeFormat, dateText, timeText)
         }
     }
-    
     var dayText: String {
         if Locale.current.calendar.isDateInToday(self) {
             return NSLocalizedString("Today", comment: "Today due date description")
@@ -28,3 +24,4 @@ extension Date {
         }
     }
 }
+

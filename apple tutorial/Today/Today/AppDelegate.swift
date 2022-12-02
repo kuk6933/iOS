@@ -1,9 +1,6 @@
-//
-//  AppDelegate.swift
-//  Today
-//
-//  Created by ohhyeongseok on 2022/11/30.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+*/
 
 import UIKit
 
@@ -33,4 +30,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
 
