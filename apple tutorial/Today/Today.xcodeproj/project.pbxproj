@@ -20,6 +20,7 @@
 		7CB0773427178CBA0042FB15 /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0773327178CBA0042FB15 /* Date+Today.swift */; };
 		7CB0773627179CBF0042FB15 /* UIColor+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB0773527179CBF0042FB15 /* UIColor+Today.swift */; };
 		7CB07739271894E90042FB15 /* ReminderListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB07738271894E90042FB15 /* ReminderListViewController+DataSource.swift */; };
+		A6E99AE1293F29E4006AD1D9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E99AE0293F29E4006AD1D9 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		7CB0773327178CBA0042FB15 /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
 		7CB0773527179CBF0042FB15 /* UIColor+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Today.swift"; sourceTree = "<group>"; };
 		7CB07738271894E90042FB15 /* ReminderListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+DataSource.swift"; sourceTree = "<group>"; };
+		A6E99AE0293F29E4006AD1D9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				7CB0772A270FAA1F0042FB15 /* Info.plist */,
 				7C46B00927BEEEEF00AA93B4 /* Configuration */,
 				7C46B00B27BEEF1800AA93B4 /* LICENSE */,
+				A6E99AE0293F29E4006AD1D9 /* TableViewController.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				7CB07721270FAA1C0042FB15 /* ReminderListViewController.swift in Sources */,
 				7CB0773427178CBA0042FB15 /* Date+Today.swift in Sources */,
 				7CB0771D270FAA1C0042FB15 /* AppDelegate.swift in Sources */,
+				A6E99AE1293F29E4006AD1D9 /* TableViewController.swift in Sources */,
 				7CB0773627179CBF0042FB15 /* UIColor+Today.swift in Sources */,
 				7CB07739271894E90042FB15 /* ReminderListViewController+DataSource.swift in Sources */,
 				7CB0771F270FAA1C0042FB15 /* SceneDelegate.swift in Sources */,
