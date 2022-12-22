@@ -16,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A602293F29536363009A9EA2 /* playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A602294029540181009A9EA2 /* url.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = url.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A6D13678294611FC005340B5 /* Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D1367B294611FC005340B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D1367D294611FC005340B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,8 @@
 				A6D13684294611FD005340B5 /* Assets.xcassets */,
 				A6D13686294611FD005340B5 /* LaunchScreen.storyboard */,
 				A6D13689294611FD005340B5 /* Info.plist */,
+				A602293F29536363009A9EA2 /* playground.playground */,
+				A602294029540181009A9EA2 /* url.playground */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
