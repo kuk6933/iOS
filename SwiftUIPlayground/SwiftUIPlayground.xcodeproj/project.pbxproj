@@ -3,36 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A69F1775288E39F400AF88CC /* stopwatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F1774288E39F400AF88CC /* stopwatchApp.swift */; };
-		A69F1777288E39F400AF88CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F1776288E39F400AF88CC /* ContentView.swift */; };
-		A69F1779288E39F400AF88CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69F1778288E39F400AF88CC /* Assets.xcassets */; };
-		A69F177C288E39F400AF88CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69F177B288E39F400AF88CC /* Preview Assets.xcassets */; };
-		A69F1783288E4D8600AF88CC /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F1782288E4D8600AF88CC /* WatchView.swift */; };
-		A69F1785288E5D0E00AF88CC /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F1784288E5D0E00AF88CC /* ButtonView.swift */; };
-		A69F1787288E5F3500AF88CC /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F1786288E5F3500AF88CC /* StopWatchManager.swift */; };
-		A69F17DF2892696D00AF88CC /* LapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F17DE2892696D00AF88CC /* LapView.swift */; };
-		A6F2824D28A39E91007A8168 /* StopWatchComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2824C28A39E91007A8168 /* StopWatchComponent.swift */; };
+		A60229792959B0CE009A9EA2 /* SwiftUIPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60229782959B0CE009A9EA2 /* SwiftUIPlaygroundApp.swift */; };
+		A602297B2959B0CE009A9EA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A602297A2959B0CE009A9EA2 /* ContentView.swift */; };
+		A602297D2959B0CF009A9EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A602297C2959B0CF009A9EA2 /* Assets.xcassets */; };
+		A60229802959B0CF009A9EA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A602297F2959B0CF009A9EA2 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A69F1771288E39F400AF88CC /* stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A69F1774288E39F400AF88CC /* stopwatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stopwatchApp.swift; sourceTree = "<group>"; };
-		A69F1776288E39F400AF88CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A69F1778288E39F400AF88CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A69F177B288E39F400AF88CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A69F1782288E4D8600AF88CC /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
-		A69F1784288E5D0E00AF88CC /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		A69F1786288E5F3500AF88CC /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
-		A69F17DE2892696D00AF88CC /* LapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapView.swift; sourceTree = "<group>"; };
-		A6F2824C28A39E91007A8168 /* StopWatchComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchComponent.swift; sourceTree = "<group>"; };
+		A60229752959B0CE009A9EA2 /* SwiftUIPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A60229782959B0CE009A9EA2 /* SwiftUIPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaygroundApp.swift; sourceTree = "<group>"; };
+		A602297A2959B0CE009A9EA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A602297C2959B0CF009A9EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A602297F2959B0CF009A9EA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A69F176E288E39F400AF88CC /* Frameworks */ = {
+		A60229722959B0CE009A9EA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,160 +32,126 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A69F1768288E39F400AF88CC = {
+		A602296C2959B0CE009A9EA2 = {
 			isa = PBXGroup;
 			children = (
-				A69F1773288E39F400AF88CC /* stopwatch */,
-				A69F1772288E39F400AF88CC /* Products */,
+				A60229772959B0CE009A9EA2 /* SwiftUIPlayground */,
+				A60229762959B0CE009A9EA2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A69F1772288E39F400AF88CC /* Products */ = {
+		A60229762959B0CE009A9EA2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A69F1771288E39F400AF88CC /* stopwatch.app */,
+				A60229752959B0CE009A9EA2 /* SwiftUIPlayground.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A69F1773288E39F400AF88CC /* stopwatch */ = {
+		A60229772959B0CE009A9EA2 /* SwiftUIPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				A69F1774288E39F400AF88CC /* stopwatchApp.swift */,
-				A6F2824728A39CF7007A8168 /* Model */,
-				A6F2824828A39D03007A8168 /* View */,
-				A6F2824928A39D0E007A8168 /* ViewModel */,
-				A69F177A288E39F400AF88CC /* Preview Content */,
+				A60229782959B0CE009A9EA2 /* SwiftUIPlaygroundApp.swift */,
+				A602297A2959B0CE009A9EA2 /* ContentView.swift */,
+				A602297C2959B0CF009A9EA2 /* Assets.xcassets */,
+				A602297E2959B0CF009A9EA2 /* Preview Content */,
 			);
-			path = stopwatch;
+			path = SwiftUIPlayground;
 			sourceTree = "<group>";
 		};
-		A69F177A288E39F400AF88CC /* Preview Content */ = {
+		A602297E2959B0CF009A9EA2 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				A69F1778288E39F400AF88CC /* Assets.xcassets */,
-				A69F177B288E39F400AF88CC /* Preview Assets.xcassets */,
+				A602297F2959B0CF009A9EA2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A6F2824728A39CF7007A8168 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A6F2824C28A39E91007A8168 /* StopWatchComponent.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A6F2824828A39D03007A8168 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A69F17DE2892696D00AF88CC /* LapView.swift */,
-				A69F1784288E5D0E00AF88CC /* ButtonView.swift */,
-				A69F1782288E4D8600AF88CC /* WatchView.swift */,
-				A69F1776288E39F400AF88CC /* ContentView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		A6F2824928A39D0E007A8168 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A69F1786288E5F3500AF88CC /* StopWatchManager.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A69F1770288E39F400AF88CC /* stopwatch */ = {
+		A60229742959B0CE009A9EA2 /* SwiftUIPlayground */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A69F177F288E39F400AF88CC /* Build configuration list for PBXNativeTarget "stopwatch" */;
+			buildConfigurationList = A60229832959B0CF009A9EA2 /* Build configuration list for PBXNativeTarget "SwiftUIPlayground" */;
 			buildPhases = (
-				A69F176D288E39F400AF88CC /* Sources */,
-				A69F176E288E39F400AF88CC /* Frameworks */,
-				A69F176F288E39F400AF88CC /* Resources */,
+				A60229712959B0CE009A9EA2 /* Sources */,
+				A60229722959B0CE009A9EA2 /* Frameworks */,
+				A60229732959B0CE009A9EA2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = stopwatch;
-			productName = stopwatch;
-			productReference = A69F1771288E39F400AF88CC /* stopwatch.app */;
+			name = SwiftUIPlayground;
+			productName = SwiftUIPlayground;
+			productReference = A60229752959B0CE009A9EA2 /* SwiftUIPlayground.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A69F1769288E39F400AF88CC /* Project object */ = {
+		A602296D2959B0CE009A9EA2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					A69F1770288E39F400AF88CC = {
-						CreatedOnToolsVersion = 13.4.1;
+					A60229742959B0CE009A9EA2 = {
+						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = A69F176C288E39F400AF88CC /* Build configuration list for PBXProject "stopwatch" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = A60229702959B0CE009A9EA2 /* Build configuration list for PBXProject "SwiftUIPlayground" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = A69F1768288E39F400AF88CC;
-			productRefGroup = A69F1772288E39F400AF88CC /* Products */;
+			mainGroup = A602296C2959B0CE009A9EA2;
+			productRefGroup = A60229762959B0CE009A9EA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A69F1770288E39F400AF88CC /* stopwatch */,
+				A60229742959B0CE009A9EA2 /* SwiftUIPlayground */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A69F176F288E39F400AF88CC /* Resources */ = {
+		A60229732959B0CE009A9EA2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A69F177C288E39F400AF88CC /* Preview Assets.xcassets in Resources */,
-				A69F1779288E39F400AF88CC /* Assets.xcassets in Resources */,
+				A60229802959B0CF009A9EA2 /* Preview Assets.xcassets in Resources */,
+				A602297D2959B0CF009A9EA2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A69F176D288E39F400AF88CC /* Sources */ = {
+		A60229712959B0CE009A9EA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A69F17DF2892696D00AF88CC /* LapView.swift in Sources */,
-				A69F1777288E39F400AF88CC /* ContentView.swift in Sources */,
-				A69F1787288E5F3500AF88CC /* StopWatchManager.swift in Sources */,
-				A69F1785288E5D0E00AF88CC /* ButtonView.swift in Sources */,
-				A69F1775288E39F400AF88CC /* stopwatchApp.swift in Sources */,
-				A69F1783288E4D8600AF88CC /* WatchView.swift in Sources */,
-				A6F2824D28A39E91007A8168 /* StopWatchComponent.swift in Sources */,
+				A602297B2959B0CE009A9EA2 /* ContentView.swift in Sources */,
+				A60229792959B0CE009A9EA2 /* SwiftUIPlaygroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A69F177D288E39F400AF88CC /* Debug */ = {
+		A60229812959B0CF009A9EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -239,7 +195,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,13 +205,13 @@
 			};
 			name = Debug;
 		};
-		A69F177E288E39F400AF88CC /* Release */ = {
+		A60229822959B0CF009A9EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -293,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -303,14 +259,14 @@
 			};
 			name = Release;
 		};
-		A69F1780288E39F400AF88CC /* Debug */ = {
+		A60229842959B0CF009A9EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"stopwatch/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPlayground/Preview Content\"";
 				DEVELOPMENT_TEAM = 3N2D6D7SCN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -324,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ohs.stopwatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ohs.SwiftUIPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,14 +288,14 @@
 			};
 			name = Debug;
 		};
-		A69F1781288E39F400AF88CC /* Release */ = {
+		A60229852959B0CF009A9EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"stopwatch/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPlayground/Preview Content\"";
 				DEVELOPMENT_TEAM = 3N2D6D7SCN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -353,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ohs.stopwatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ohs.SwiftUIPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -364,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A69F176C288E39F400AF88CC /* Build configuration list for PBXProject "stopwatch" */ = {
+		A60229702959B0CE009A9EA2 /* Build configuration list for PBXProject "SwiftUIPlayground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A69F177D288E39F400AF88CC /* Debug */,
-				A69F177E288E39F400AF88CC /* Release */,
+				A60229812959B0CF009A9EA2 /* Debug */,
+				A60229822959B0CF009A9EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A69F177F288E39F400AF88CC /* Build configuration list for PBXNativeTarget "stopwatch" */ = {
+		A60229832959B0CF009A9EA2 /* Build configuration list for PBXNativeTarget "SwiftUIPlayground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A69F1780288E39F400AF88CC /* Debug */,
-				A69F1781288E39F400AF88CC /* Release */,
+				A60229842959B0CF009A9EA2 /* Debug */,
+				A60229852959B0CF009A9EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A69F1769288E39F400AF88CC /* Project object */;
+	rootObject = A602296D2959B0CE009A9EA2 /* Project object */;
 }
