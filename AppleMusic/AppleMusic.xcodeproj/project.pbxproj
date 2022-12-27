@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A67BEC0D2948722500DA36C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67BEC0C2948722500DA36C9 /* AppDelegate.swift */; };
-		A67BEC0F2948722500DA36C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67BEC0E2948722500DA36C9 /* SceneDelegate.swift */; };
-		A67BEC112948722500DA36C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67BEC102948722500DA36C9 /* ViewController.swift */; };
-		A67BEC142948722500DA36C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67BEC122948722500DA36C9 /* Main.storyboard */; };
-		A67BEC162948722600DA36C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67BEC152948722600DA36C9 /* Assets.xcassets */; };
-		A67BEC192948722600DA36C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67BEC172948722600DA36C9 /* LaunchScreen.storyboard */; };
+		A6022995295AE774009A9EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6022994295AE774009A9EA2 /* AppDelegate.swift */; };
+		A6022997295AE774009A9EA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6022996295AE774009A9EA2 /* SceneDelegate.swift */; };
+		A6022999295AE774009A9EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6022998295AE774009A9EA2 /* ViewController.swift */; };
+		A602299C295AE774009A9EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A602299A295AE774009A9EA2 /* Main.storyboard */; };
+		A602299E295AE776009A9EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A602299D295AE776009A9EA2 /* Assets.xcassets */; };
+		A60229A1295AE776009A9EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A602299F295AE776009A9EA2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A67BEC092948722500DA36C9 /* AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A67BEC0C2948722500DA36C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A67BEC0E2948722500DA36C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A67BEC102948722500DA36C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A67BEC132948722500DA36C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A67BEC152948722600DA36C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A67BEC182948722600DA36C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A67BEC1A2948722600DA36C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6022991295AE774009A9EA2 /* AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6022994295AE774009A9EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6022996295AE774009A9EA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A6022998295AE774009A9EA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A602299B295AE774009A9EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A602299D295AE776009A9EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A60229A0295AE776009A9EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A60229A2295AE776009A9EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A67BEC062948722500DA36C9 /* Frameworks */ = {
+		A602298E295AE774009A9EA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,32 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A67BEC002948722500DA36C9 = {
+		A6022988295AE774009A9EA2 = {
 			isa = PBXGroup;
 			children = (
-				A67BEC0B2948722500DA36C9 /* AppleMusic */,
-				A67BEC0A2948722500DA36C9 /* Products */,
+				A6022993295AE774009A9EA2 /* AppleMusic */,
+				A6022992295AE774009A9EA2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A67BEC0A2948722500DA36C9 /* Products */ = {
+		A6022992295AE774009A9EA2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A67BEC092948722500DA36C9 /* AppleMusic.app */,
+				A6022991295AE774009A9EA2 /* AppleMusic.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A67BEC0B2948722500DA36C9 /* AppleMusic */ = {
+		A6022993295AE774009A9EA2 /* AppleMusic */ = {
 			isa = PBXGroup;
 			children = (
-				A67BEC0C2948722500DA36C9 /* AppDelegate.swift */,
-				A67BEC0E2948722500DA36C9 /* SceneDelegate.swift */,
-				A67BEC102948722500DA36C9 /* ViewController.swift */,
-				A67BEC122948722500DA36C9 /* Main.storyboard */,
-				A67BEC152948722600DA36C9 /* Assets.xcassets */,
-				A67BEC172948722600DA36C9 /* LaunchScreen.storyboard */,
-				A67BEC1A2948722600DA36C9 /* Info.plist */,
+				A6022994295AE774009A9EA2 /* AppDelegate.swift */,
+				A6022996295AE774009A9EA2 /* SceneDelegate.swift */,
+				A6022998295AE774009A9EA2 /* ViewController.swift */,
+				A602299A295AE774009A9EA2 /* Main.storyboard */,
+				A602299D295AE776009A9EA2 /* Assets.xcassets */,
+				A602299F295AE776009A9EA2 /* LaunchScreen.storyboard */,
+				A60229A2295AE776009A9EA2 /* Info.plist */,
 			);
 			path = AppleMusic;
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A67BEC082948722500DA36C9 /* AppleMusic */ = {
+		A6022990295AE774009A9EA2 /* AppleMusic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A67BEC1D2948722600DA36C9 /* Build configuration list for PBXNativeTarget "AppleMusic" */;
+			buildConfigurationList = A60229A5295AE776009A9EA2 /* Build configuration list for PBXNativeTarget "AppleMusic" */;
 			buildPhases = (
-				A67BEC052948722500DA36C9 /* Sources */,
-				A67BEC062948722500DA36C9 /* Frameworks */,
-				A67BEC072948722500DA36C9 /* Resources */,
+				A602298D295AE774009A9EA2 /* Sources */,
+				A602298E295AE774009A9EA2 /* Frameworks */,
+				A602298F295AE774009A9EA2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +84,25 @@
 			);
 			name = AppleMusic;
 			productName = AppleMusic;
-			productReference = A67BEC092948722500DA36C9 /* AppleMusic.app */;
+			productReference = A6022991295AE774009A9EA2 /* AppleMusic.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A67BEC012948722500DA36C9 /* Project object */ = {
+		A6022989295AE774009A9EA2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					A67BEC082948722500DA36C9 = {
+					A6022990295AE774009A9EA2 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = A67BEC042948722500DA36C9 /* Build configuration list for PBXProject "AppleMusic" */;
+			buildConfigurationList = A602298C295AE774009A9EA2 /* Build configuration list for PBXProject "AppleMusic" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = A67BEC002948722500DA36C9;
-			productRefGroup = A67BEC0A2948722500DA36C9 /* Products */;
+			mainGroup = A6022988295AE774009A9EA2;
+			productRefGroup = A6022992295AE774009A9EA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A67BEC082948722500DA36C9 /* AppleMusic */,
+				A6022990295AE774009A9EA2 /* AppleMusic */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A67BEC072948722500DA36C9 /* Resources */ = {
+		A602298F295AE774009A9EA2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A67BEC192948722600DA36C9 /* LaunchScreen.storyboard in Resources */,
-				A67BEC162948722600DA36C9 /* Assets.xcassets in Resources */,
-				A67BEC142948722500DA36C9 /* Main.storyboard in Resources */,
+				A60229A1295AE776009A9EA2 /* LaunchScreen.storyboard in Resources */,
+				A602299E295AE776009A9EA2 /* Assets.xcassets in Resources */,
+				A602299C295AE774009A9EA2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A67BEC052948722500DA36C9 /* Sources */ = {
+		A602298D295AE774009A9EA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A67BEC112948722500DA36C9 /* ViewController.swift in Sources */,
-				A67BEC0D2948722500DA36C9 /* AppDelegate.swift in Sources */,
-				A67BEC0F2948722500DA36C9 /* SceneDelegate.swift in Sources */,
+				A6022999295AE774009A9EA2 /* ViewController.swift in Sources */,
+				A6022995295AE774009A9EA2 /* AppDelegate.swift in Sources */,
+				A6022997295AE774009A9EA2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A67BEC122948722500DA36C9 /* Main.storyboard */ = {
+		A602299A295AE774009A9EA2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A67BEC132948722500DA36C9 /* Base */,
+				A602299B295AE774009A9EA2 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A67BEC172948722600DA36C9 /* LaunchScreen.storyboard */ = {
+		A602299F295AE776009A9EA2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A67BEC182948722600DA36C9 /* Base */,
+				A60229A0295AE776009A9EA2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A67BEC1B2948722600DA36C9 /* Debug */ = {
+		A60229A3295AE776009A9EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		A67BEC1C2948722600DA36C9 /* Release */ = {
+		A60229A4295AE776009A9EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +280,7 @@
 			};
 			name = Release;
 		};
-		A67BEC1E2948722600DA36C9 /* Debug */ = {
+		A60229A6295AE776009A9EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -308,7 +308,7 @@
 			};
 			name = Debug;
 		};
-		A67BEC1F2948722600DA36C9 /* Release */ = {
+		A60229A7295AE776009A9EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -339,25 +339,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A67BEC042948722500DA36C9 /* Build configuration list for PBXProject "AppleMusic" */ = {
+		A602298C295AE774009A9EA2 /* Build configuration list for PBXProject "AppleMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A67BEC1B2948722600DA36C9 /* Debug */,
-				A67BEC1C2948722600DA36C9 /* Release */,
+				A60229A3295AE776009A9EA2 /* Debug */,
+				A60229A4295AE776009A9EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A67BEC1D2948722600DA36C9 /* Build configuration list for PBXNativeTarget "AppleMusic" */ = {
+		A60229A5295AE776009A9EA2 /* Build configuration list for PBXNativeTarget "AppleMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A67BEC1E2948722600DA36C9 /* Debug */,
-				A67BEC1F2948722600DA36C9 /* Release */,
+				A60229A6295AE776009A9EA2 /* Debug */,
+				A60229A7295AE776009A9EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A67BEC012948722500DA36C9 /* Project object */;
+	rootObject = A6022989295AE774009A9EA2 /* Project object */;
 }
