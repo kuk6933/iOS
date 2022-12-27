@@ -13,6 +13,7 @@
 		A602299C295AE774009A9EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A602299A295AE774009A9EA2 /* Main.storyboard */; };
 		A602299E295AE776009A9EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A602299D295AE776009A9EA2 /* Assets.xcassets */; };
 		A60229A1295AE776009A9EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A602299F295AE776009A9EA2 /* LaunchScreen.storyboard */; };
+		A60229AA295AEBAD009A9EA2 /* DefaultStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60229A9295AEBAD009A9EA2 /* DefaultStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A602299D295AE776009A9EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A60229A0295AE776009A9EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A60229A2295AE776009A9EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60229A9295AEBAD009A9EA2 /* DefaultStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		A6022993295AE774009A9EA2 /* AppleMusic */ = {
 			isa = PBXGroup;
 			children = (
+				A60229A8295AEB9C009A9EA2 /* Style */,
 				A6022994295AE774009A9EA2 /* AppDelegate.swift */,
 				A6022996295AE774009A9EA2 /* SceneDelegate.swift */,
 				A6022998295AE774009A9EA2 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				A60229A2295AE776009A9EA2 /* Info.plist */,
 			);
 			path = AppleMusic;
+			sourceTree = "<group>";
+		};
+		A60229A8295AEB9C009A9EA2 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				A60229A9295AEBAD009A9EA2 /* DefaultStyle.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 				A6022999295AE774009A9EA2 /* ViewController.swift in Sources */,
 				A6022995295AE774009A9EA2 /* AppDelegate.swift in Sources */,
 				A6022997295AE774009A9EA2 /* SceneDelegate.swift in Sources */,
+				A60229AA295AEBAD009A9EA2 /* DefaultStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
