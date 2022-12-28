@@ -58,6 +58,8 @@
 		A6022993295AE774009A9EA2 /* AppleMusic */ = {
 			isa = PBXGroup;
 			children = (
+				A60229AC295C30A1009A9EA2 /* Track */,
+				A60229AB295C3097009A9EA2 /* Player */,
 				A60229A8295AEB9C009A9EA2 /* Style */,
 				A6022994295AE774009A9EA2 /* AppDelegate.swift */,
 				A6022996295AE774009A9EA2 /* SceneDelegate.swift */,
@@ -76,6 +78,20 @@
 				A60229A9295AEBAD009A9EA2 /* DefaultStyle.swift */,
 			);
 			path = Style;
+			sourceTree = "<group>";
+		};
+		A60229AB295C3097009A9EA2 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		A60229AC295C30A1009A9EA2 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Track;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
