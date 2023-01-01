@@ -14,7 +14,7 @@
 		A602299E295AE776009A9EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A602299D295AE776009A9EA2 /* Assets.xcassets */; };
 		A60229A1295AE776009A9EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A602299F295AE776009A9EA2 /* LaunchScreen.storyboard */; };
 		A60229AA295AEBAD009A9EA2 /* DefaultStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60229A9295AEBAD009A9EA2 /* DefaultStyle.swift */; };
-		A60229AF2961AA2A009A9EA2 /* TrackCollectionViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60229AE2961AA2A009A9EA2 /* TrackCollectionViewHeaderView.swift */; };
+		A60229AF2961AA2A009A9EA2 /* TrackCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60229AE2961AA2A009A9EA2 /* TrackCollectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		A60229A0295AE776009A9EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A60229A2295AE776009A9EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A60229A9295AEBAD009A9EA2 /* DefaultStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStyle.swift; sourceTree = "<group>"; };
-		A60229AE2961AA2A009A9EA2 /* TrackCollectionViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionViewHeaderView.swift; sourceTree = "<group>"; };
+		A60229AE2961AA2A009A9EA2 /* TrackCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,6 @@
 				A6022994295AE774009A9EA2 /* AppDelegate.swift */,
 				A6022996295AE774009A9EA2 /* SceneDelegate.swift */,
 				A6022998295AE774009A9EA2 /* ViewController.swift */,
-				A602299A295AE774009A9EA2 /* Main.storyboard */,
 				A602299D295AE776009A9EA2 /* Assets.xcassets */,
 				A602299F295AE776009A9EA2 /* LaunchScreen.storyboard */,
 				A60229A2295AE776009A9EA2 /* Info.plist */,
@@ -100,7 +99,8 @@
 		A60229AD2961A9F6009A9EA2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A60229AE2961AA2A009A9EA2 /* TrackCollectionViewHeaderView.swift */,
+				A602299A295AE774009A9EA2 /* Main.storyboard */,
+				A60229AE2961AA2A009A9EA2 /* TrackCollectionHeaderView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6022999295AE774009A9EA2 /* ViewController.swift in Sources */,
-				A60229AF2961AA2A009A9EA2 /* TrackCollectionViewHeaderView.swift in Sources */,
+				A60229AF2961AA2A009A9EA2 /* TrackCollectionHeaderView.swift in Sources */,
 				A6022995295AE774009A9EA2 /* AppDelegate.swift in Sources */,
 				A6022997295AE774009A9EA2 /* SceneDelegate.swift in Sources */,
 				A60229AA295AEBAD009A9EA2 /* DefaultStyle.swift in Sources */,
