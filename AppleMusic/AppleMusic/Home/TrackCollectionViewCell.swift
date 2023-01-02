@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TrackCollecionViewCell: UICollectionViewCell {
+class TrackCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var trackThumbnail: UIImageView!
     @IBOutlet weak var trackTitle: UILabel!
     @IBOutlet weak var trackArtist: UILabel!
