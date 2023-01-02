@@ -1,8 +1,9 @@
 //
-//  PlayerViewContollerViewController.swift
-//  AppleMusic
+//  PlayerViewController.swift
+//  AppleMusicStApp
 //
-//  Created by ohhyeongseok on 2023/01/01.
+//  Created by joonwon lee on 2020/01/12.
+//  Copyright © 2020 com.joonwon. All rights reserved.
 //
 
 import UIKit
@@ -19,8 +20,6 @@ class PlayerViewController: UIViewController {
     @IBOutlet weak var timeSlider: UISlider!
     @IBOutlet weak var currentTimeLabel: UILabel!
     @IBOutlet weak var totalDurationLabel: UILabel!
-    
-    let simplePlayer = SimplePlayer.shared
     
     //TODO: SimplePlayer 만들고 프로퍼티 추가
     

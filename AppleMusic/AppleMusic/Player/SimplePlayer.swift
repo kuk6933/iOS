@@ -1,15 +1,16 @@
 //
 //  SimplePlayer.swift
-//  AppleMusic
+//  AppleMusicStApp
 //
-//  Created by ohhyeongseok on 2023/01/01.
+//  Created by joonwon lee on 2020/03/15.
+//  Copyright © 2020 com.joonwon. All rights reserved.
 //
 
 import AVFoundation
 
 class SimplePlayer {
     // TODO: 싱글톤 만들기, 왜 만드는가?
-    static let shared = SimplePlayer()
+    
     
     private let player = AVPlayer()
 

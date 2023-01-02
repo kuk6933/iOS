@@ -1,8 +1,9 @@
 //
 //  Extension+AVPlayerItem.swift
-//  AppleMusic
+//  AppleMusicStApp
 //
-//  Created by ohhyeongseok on 2023/01/01.
+//  Created by joonwon lee on 2020/01/12.
+//  Copyright © 2020 com.joonwon. All rights reserved.
 //
 
 import AVFoundation
@@ -10,14 +11,14 @@ import UIKit
 
 extension AVPlayerItem {
     func convertToTrack() -> Track? {
-        let metadataList = asset.metadata
+        let metadatList = asset.metadata
         
         var trackTitle: String?
         var trackArtist: String?
         var trackAlbumName: String?
         var trackArtwork: UIImage?
         
-        for metadata in metadataList {
+        for metadata in metadatList {
             if let title = metadata.title {
                 trackTitle = title
             }
