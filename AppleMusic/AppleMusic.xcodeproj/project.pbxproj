@@ -83,7 +83,6 @@
 				A60229FD2962D896009A9EA2 /* AppDelegate.swift */,
 				A60229FF2962D896009A9EA2 /* SceneDelegate.swift */,
 				A6022A012962D896009A9EA2 /* ViewController.swift */,
-				A6022A032962D896009A9EA2 /* Main.storyboard */,
 				A6022A062962D897009A9EA2 /* Assets.xcassets */,
 				A6022A082962D897009A9EA2 /* LaunchScreen.storyboard */,
 				A6022A0B2962D897009A9EA2 /* Info.plist */,
@@ -94,6 +93,7 @@
 		A6022A112962D8AA009A9EA2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A6022A032962D896009A9EA2 /* Main.storyboard */,
 				A6022A152962D8EA009A9EA2 /* HomeViewController.swift */,
 				A6022A172962D8F0009A9EA2 /* TrackCollectionHeaderView.swift */,
 				A6022A192962D8F4009A9EA2 /* TrackCollectionViewCell.swift */,
