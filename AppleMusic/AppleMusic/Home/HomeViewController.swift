@@ -40,8 +40,21 @@ extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
-            // TODO: 헤더 구성하기
-            return UICollectionReusableView()
+            guard let item = trackManager.todaysTrack else {
+                return UICollectionReusableView()
+            }
+           
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "TrackCollectionHeaderView", for: indexPath) as? TrackCollectionHeaderView else {
+                return UICollectionReusableView()
+            }
+            header.update(with: item)
+            header.tapHandler = { item -> Void in
+                let playerStoryboard = UIStoryboard.init(name: "Player", bundle: nil) //Player 스토리보드를 가져옴
+                guard let playerVC = playerStoryboard.instantiateViewController(withIdentifier: "PlayerViewController") as? PlayerViewController else { return }
+                playerVC.simplePlayer.replaceCurrentItem(with: item)
+                self.present(playerVC, animated: true, completion: nil) //self
+            }
+            return header
         default:
             return UICollectionReusableView()
         }
@@ -49,9 +62,13 @@ extension HomeViewController: UICollectionViewDataSource {
 }
 
 extension HomeViewController: UICollectionViewDelegate {
-    // 클릭했을때 어떻게 할까?
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // TODO: 곡 클릭시 플레이어뷰 띄우기
+        let playerStoryboard = UIStoryboard.init(name: "Player", bundle: nil) //Player 스토리보드를 가져옴
+        guard let playerVC = playerStoryboard.instantiateViewController(withIdentifier: "PlayerViewController") as? PlayerViewController else { return } // 스토리보드 안에서 ViewController 구분
+        let item = trackManager.tracks[indexPath.item]
+        playerVC.simplePlayer.replaceCurrentItem(with: item)
+        present(playerVC, animated: true, completion: nil)
     }
 }
 
