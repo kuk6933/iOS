@@ -2,8 +2,7 @@
 //  Track.swift
 //  AppleMusicStApp
 //
-//  Created by joonwon lee on 2020/01/12.
-//  Copyright © 2020 com.joonwon. All rights reserved.
+//  Created by ohhyeongseok on 2023/01/02.
 //
 import UIKit
 

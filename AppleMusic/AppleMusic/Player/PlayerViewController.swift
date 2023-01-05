@@ -2,8 +2,7 @@
 //  PlayerViewController.swift
 //  AppleMusicStApp
 //
-//  Created by joonwon lee on 2020/01/12.
-//  Copyright © 2020 com.joonwon. All rights reserved.
+//  Created by ohhyeongseok on 2023/01/02.
 //
 
 import UIKit
@@ -29,7 +28,6 @@ class PlayerViewController: UIViewController {
         super.viewDidLoad()
         updatePlayButton()
         updateTime(time: CMTime.zero)
-        // TODO: TimeObserver 구현
         timeObserver = simplePlayer.addPeriodicTimeObserver(forInterval: CMTime(seconds: 1, preferredTimescale: 10), queue: DispatchQueue.main, using: { time in
             self.updateTime(time: time)
         })
@@ -43,7 +41,6 @@ class PlayerViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        // TODO: 뷰나갈때 처리 > 심플플레이어
         simplePlayer.pause()
         simplePlayer.replaceCurrentItem(with: nil)
     }
@@ -65,7 +62,6 @@ class PlayerViewController: UIViewController {
     }
     
     @IBAction func togglePlayButton(_ sender: UIButton) {
-        // TODO: 플레이버튼 토글 구현
         if simplePlayer.isPlaying {
             simplePlayer.pause()
         } else {
@@ -77,7 +73,6 @@ class PlayerViewController: UIViewController {
 
 extension PlayerViewController {
     func updateTrackInfo() {
-        // TODO: 트랙 정보 업데이트
         guard let track = simplePlayer.currentItem?.convertToTrack() else { return }
         thumbnailImageView.image = track.artwork
         titleLabel.text = track.title
@@ -106,7 +101,6 @@ extension PlayerViewController {
     }
     
     func updatePlayButton() {
-        // TODO: 플레이버튼 업데이트 UI작업 > 재생/멈춤
         if simplePlayer.isPlaying {
             let configuration = UIImage.SymbolConfiguration(pointSize: 40)
             let image = UIImage(systemName: "pause.fill", withConfiguration: configuration)
