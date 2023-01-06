@@ -13,8 +13,6 @@
 		A6D1365D29407702005340B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D1365B29407702005340B5 /* Main.storyboard */; };
 		A6D1365F29407702005340B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D1365E29407702005340B5 /* Assets.xcassets */; };
 		A6D1366229407702005340B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D1366029407702005340B5 /* LaunchScreen.storyboard */; };
-		A6D1366A2940777F005340B5 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D136692940777F005340B5 /* TestTableViewController.swift */; };
-		A6D1366C29407A94005340B5 /* TestCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D1366B29407A94005340B5 /* TestCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +24,6 @@
 		A6D1365E29407702005340B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6D1366129407702005340B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6D1366329407702005340B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6D136692940777F005340B5 /* TestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
-		A6D1366B29407A94005340B5 /* TestCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +58,11 @@
 			children = (
 				A6D1365529407702005340B5 /* AppDelegate.swift */,
 				A6D1365729407702005340B5 /* SceneDelegate.swift */,
-				A6D136692940777F005340B5 /* TestTableViewController.swift */,
 				A6D1365929407702005340B5 /* ViewController.swift */,
 				A6D1365B29407702005340B5 /* Main.storyboard */,
 				A6D1365E29407702005340B5 /* Assets.xcassets */,
 				A6D1366029407702005340B5 /* LaunchScreen.storyboard */,
 				A6D1366329407702005340B5 /* Info.plist */,
-				A6D1366B29407A94005340B5 /* TestCollectionViewController.swift */,
 			);
 			path = playground;
 			sourceTree = "<group>";
@@ -147,8 +141,6 @@
 				A6D1365A29407702005340B5 /* ViewController.swift in Sources */,
 				A6D1365629407702005340B5 /* AppDelegate.swift in Sources */,
 				A6D1365829407702005340B5 /* SceneDelegate.swift in Sources */,
-				A6D1366C29407A94005340B5 /* TestCollectionViewController.swift in Sources */,
-				A6D1366A2940777F005340B5 /* TestTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
