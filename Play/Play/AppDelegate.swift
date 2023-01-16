@@ -9,18 +9,39 @@ import UIKit
 import UserNotifications
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         // Override point for customization after application launch.
         if #available(iOS 10.0, *) {
             let notiCenter = UNUserNotificationCenter.current()
             notiCenter.requestAuthorization(options: [.alert, .badge, .sound]) { (didAllow, e) in }
-            print("bbbbb")
-        } else{
-            
+            notiCenter.delegate = self
+        } else {
+            let setting = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+            application.registerUserNotificationSettings(setting)
         }
         return true
+    }
+    
+    // 앱 실행 도중 알림 메세지가 도착한경우
+    @available(iOS 10.0, *)
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        if notification.request.identifier == "wakeup" {
+            let userInfo = notification.request.content.userInfo
+            print(userInfo["name"]!)
+        }
+        completionHandler([.alert, .badge, .sound])
+    }
+    
+    //사용자가 알림 메세지를 클릭했을 경우
+    @available(iOS 10.0, *)
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        if response.notification.request.identifier == "wakeup" {
+            let userInfo = response.notification.request.content.userInfo
+            print(userInfo["name"]!)
+        }
+        completionHandler()
     }
 
     // MARK: UISceneSession Lifecycle
