@@ -14,6 +14,7 @@ struct BountyInfo {
     var image: UIImage? {
         return UIImage(named: "\(name).jpg")
     }
+    
     init(name: String, bounty: Int) {
         self.name = name
         self.bounty = bounty

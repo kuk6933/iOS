@@ -23,8 +23,6 @@ class BountyViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -49,7 +47,6 @@ class BountyViewController: UIViewController, UICollectionViewDataSource, UIColl
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemSpacing: CGFloat = 10
         let textAreaHeight: CGFloat = 65
-        
         let width: CGFloat = (collectionView.bounds.width - itemSpacing) / 2
         let height: CGFloat = width * 10/7 + textAreaHeight
         return CGSize(width: width, height: height)
@@ -74,6 +71,7 @@ class BountyViewModel {
         }
         return sortedList
     }
+    
     var numberOfBountyInfoList: Int {
         return bountyInfoList.count
     }

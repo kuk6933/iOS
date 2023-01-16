@@ -17,9 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             let notiCenter = UNUserNotificationCenter.current()
             notiCenter.requestAuthorization(options: [.alert, .badge, .sound]) { (didAllow, e) in }
             notiCenter.delegate = self
-        } else {
-            let setting = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-            application.registerUserNotificationSettings(setting)
         }
         return true
     }
