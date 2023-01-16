@@ -1,20 +1,25 @@
 //
 //  AppDelegate.swift
-//  jaeeun
+//  Playground
 //
-//  Created by ohhyeongseok on 2022/01/18.
+//  Created by ohhyeongseok on 2023/01/08.
 //
 
 import UIKit
+import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         // Override point for customization after application launch.
-        sleep(5)
+        if #available(iOS 10.0, *) {
+            let notiCenter = UNUserNotificationCenter.current()
+            notiCenter.requestAuthorization(options: [.alert, .badge, .sound]) { (didAllow, e) in }
+            print("bbbbb")
+        } else{
+            
+        }
         return true
     }
 

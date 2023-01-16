@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  jaeeun
+//  Play
 //
-//  Created by ohhyeongseok on 2022/01/18.
+//  Created by ohhyeongseok on 2023/01/12.
 //
 
 import UIKit
@@ -32,8 +32,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
-        // Called when the scene will move from an active state to an inactive state.
-        // This may occur due to temporary interruptions (ex. an incoming phone call).
+        if #available(iOS 10.0, *) {
+            UNUserNotificationCenter.current().getNotificationSettings{ settings in
+                if settings.authorizationStatus == UNAuthorizationStatus.authorized {
+                    let nContent = UNMutableNotificationContent()
+                    nContent.badge = 1
+                    nContent.title = "로컬 알림 메세지"
+                    nContent.subtitle = "얼른 다시 앱을 열어주세요!!"
+                    nContent.body = "다시 들어오세요!"
+                    nContent.sound = UNNotificationSound.default
+                    nContent.userInfo = ["name" : "홍길동"]
+                    
+                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+                    let request = UNNotificationRequest(identifier: "wakeup", content: nContent, trigger: trigger)
+                    UNUserNotificationCenter.current().add(request)
+                } else {
+                    print("사용자가 동의하지 않음!!!")
+                }
+            }
+        } else {
+            // 9 이하
+        }
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
